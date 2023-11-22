@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<AnchorPane prefHeight="1000.0" prefWidth="1280.0" styleClass="scene" stylesheets="@smo.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="GUI.view.fx.AutoModeController">
+    <Label layoutX="40.0" layoutY="32" text="При увеличении кол-ва источников:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <LineChart fx:id="pn_Rejects" layoutX="50.0" layoutY="52.0" prefHeight="300.0" prefWidth="300.0" title="Частота отказов">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="pn_TimeInSys" layoutX="425.0" layoutY="52.0" prefHeight="300.0" prefWidth="300.0" title="Время в системе">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="pn_DevStress" layoutX="800.0" layoutY="52.0" prefHeight="300.0" prefWidth="300.0" title="Нагруженность приборов">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <Label layoutX="40.0" layoutY="350" text="При увеличении размера буфера:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <LineChart fx:id="bs_Rejects" layoutX="50.0" layoutY="370.0" prefHeight="300.0" prefWidth="300.0" title="Частота отказов">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="bs_TimeInSys" layoutX="425.0" layoutY="370.0" prefHeight="300.0" prefWidth="300.0" title="Время в системе">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="bs_DevStress" layoutX="800.0" layoutY="370.0" prefHeight="300.0" prefWidth="300.0" title="Нагруженность приборов">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <Label layoutX="40.0" layoutY="680" text="При увеличении кол-ва приборов:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <LineChart fx:id="sc_Rejects" layoutX="50.0" layoutY="700.0" prefHeight="300.0" prefWidth="300.0" title="Частота отказов">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="sc_TimeInSys" layoutX="425.0" layoutY="700.0" prefHeight="300.0" prefWidth="300.0" title="Время в системе">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="sc_DevStress" layoutX="800.0" layoutY="700.0" prefHeight="300.0" prefWidth="300.0" title="Нагруженность приборов">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+</AnchorPane>
